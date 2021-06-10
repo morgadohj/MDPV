@@ -41,6 +41,7 @@ namespace MDPV
             this.panel3 = new System.Windows.Forms.Panel();
             this.agregar = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.bguardar = new System.Windows.Forms.Button();
@@ -192,6 +193,8 @@ namespace MDPV
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eli});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 106);
             this.dataGridView1.Name = "dataGridView1";
@@ -199,6 +202,13 @@ namespace MDPV
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(789, 488);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // Eli
+            // 
+            this.Eli.HeaderText = "";
+            this.Eli.Image = ((System.Drawing.Image)(resources.GetObject("Eli.Image")));
+            this.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Eli.Name = "Eli";
             // 
             // panel4
             // 
@@ -470,6 +480,7 @@ namespace MDPV
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bguardar;
         private System.Windows.Forms.Button bregresar;
+        private System.Windows.Forms.DataGridViewImageColumn Eli;
     }
 }
 
