@@ -44,6 +44,8 @@ namespace MDPV
             this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.guardadCambios = new System.Windows.Forms.Button();
+            this.lbl_idusu = new System.Windows.Forms.Label();
             this.bguardar = new System.Windows.Forms.Button();
             this.bregresar = new System.Windows.Forms.Button();
             this.comboRol = new System.Windows.Forms.ComboBox();
@@ -124,6 +126,7 @@ namespace MDPV
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(879, 58);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // buscar
             // 
@@ -198,10 +201,13 @@ namespace MDPV
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 106);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(789, 488);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // Eli
             // 
@@ -221,6 +227,8 @@ namespace MDPV
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.guardadCambios);
+            this.panel5.Controls.Add(this.lbl_idusu);
             this.panel5.Controls.Add(this.bguardar);
             this.panel5.Controls.Add(this.bregresar);
             this.panel5.Controls.Add(this.comboRol);
@@ -241,6 +249,28 @@ namespace MDPV
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(662, 326);
             this.panel5.TabIndex = 5;
+            // 
+            // guardadCambios
+            // 
+            this.guardadCambios.Image = ((System.Drawing.Image)(resources.GetObject("guardadCambios.Image")));
+            this.guardadCambios.Location = new System.Drawing.Point(166, 246);
+            this.guardadCambios.Name = "guardadCambios";
+            this.guardadCambios.Size = new System.Drawing.Size(115, 69);
+            this.guardadCambios.TabIndex = 16;
+            this.guardadCambios.Text = "Guardar";
+            this.guardadCambios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.guardadCambios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.guardadCambios.UseVisualStyleBackColor = true;
+            this.guardadCambios.Click += new System.EventHandler(this.guardadCambios_Click);
+            // 
+            // lbl_idusu
+            // 
+            this.lbl_idusu.AutoSize = true;
+            this.lbl_idusu.Location = new System.Drawing.Point(15, 171);
+            this.lbl_idusu.Name = "lbl_idusu";
+            this.lbl_idusu.Size = new System.Drawing.Size(54, 16);
+            this.lbl_idusu.TabIndex = 15;
+            this.lbl_idusu.Text = "label7";
             // 
             // bguardar
             // 
@@ -265,9 +295,11 @@ namespace MDPV
             this.bregresar.Text = "Volver";
             this.bregresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bregresar.UseVisualStyleBackColor = true;
+            this.bregresar.Click += new System.EventHandler(this.bregresar_Click);
             // 
             // comboRol
             // 
+            this.comboRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboRol.FormattingEnabled = true;
             this.comboRol.Items.AddRange(new object[] {
             "FACTURISTA",
@@ -313,6 +345,7 @@ namespace MDPV
             this.texUsuario.Name = "texUsuario";
             this.texUsuario.Size = new System.Drawing.Size(436, 16);
             this.texUsuario.TabIndex = 9;
+            this.texUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel8
             // 
@@ -329,6 +362,7 @@ namespace MDPV
             this.texContraseña.Name = "texContraseña";
             this.texContraseña.Size = new System.Drawing.Size(436, 16);
             this.texContraseña.TabIndex = 9;
+            this.texContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel6
             // 
@@ -363,6 +397,7 @@ namespace MDPV
             this.texNombre.Name = "texNombre";
             this.texNombre.Size = new System.Drawing.Size(436, 16);
             this.texNombre.TabIndex = 5;
+            this.texNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
@@ -481,6 +516,8 @@ namespace MDPV
         private System.Windows.Forms.Button bguardar;
         private System.Windows.Forms.Button bregresar;
         private System.Windows.Forms.DataGridViewImageColumn Eli;
+        private System.Windows.Forms.Label lbl_idusu;
+        private System.Windows.Forms.Button guardadCambios;
     }
 }
 
