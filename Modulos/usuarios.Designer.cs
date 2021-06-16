@@ -94,7 +94,7 @@ namespace MDPV
             this.cerrar.BackColor = System.Drawing.Color.Red;
             this.cerrar.Depth = 0;
             this.cerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.cerrar.Font = new System.Drawing.Font("Metropolis Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cerrar.Location = new System.Drawing.Point(854, 0);
             this.cerrar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.cerrar.MouseState = MaterialSkin.MouseState.HOVER;
@@ -110,10 +110,10 @@ namespace MDPV
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 16);
+            this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuarios";
             // 
@@ -219,7 +219,7 @@ namespace MDPV
             // panel4
             // 
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.panel4.Location = new System.Drawing.Point(28, 114);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(687, 386);
@@ -253,7 +253,7 @@ namespace MDPV
             // guardadCambios
             // 
             this.guardadCambios.Image = ((System.Drawing.Image)(resources.GetObject("guardadCambios.Image")));
-            this.guardadCambios.Location = new System.Drawing.Point(166, 246);
+            this.guardadCambios.Location = new System.Drawing.Point(147, 246);
             this.guardadCambios.Name = "guardadCambios";
             this.guardadCambios.Size = new System.Drawing.Size(115, 69);
             this.guardadCambios.TabIndex = 16;
@@ -268,7 +268,7 @@ namespace MDPV
             this.lbl_idusu.AutoSize = true;
             this.lbl_idusu.Location = new System.Drawing.Point(15, 171);
             this.lbl_idusu.Name = "lbl_idusu";
-            this.lbl_idusu.Size = new System.Drawing.Size(54, 16);
+            this.lbl_idusu.Size = new System.Drawing.Size(57, 20);
             this.lbl_idusu.TabIndex = 15;
             this.lbl_idusu.Text = "label7";
             // 
@@ -311,7 +311,7 @@ namespace MDPV
             "COMPRAS"});
             this.comboRol.Location = new System.Drawing.Point(181, 138);
             this.comboRol.Name = "comboRol";
-            this.comboRol.Size = new System.Drawing.Size(159, 24);
+            this.comboRol.Size = new System.Drawing.Size(159, 28);
             this.comboRol.TabIndex = 11;
             // 
             // panel10
@@ -327,7 +327,7 @@ namespace MDPV
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Location = new System.Drawing.Point(185, 110);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(436, 16);
+            this.textBox5.Size = new System.Drawing.Size(436, 19);
             this.textBox5.TabIndex = 9;
             // 
             // panel9
@@ -343,7 +343,7 @@ namespace MDPV
             this.texUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.texUsuario.Location = new System.Drawing.Point(185, 41);
             this.texUsuario.Name = "texUsuario";
-            this.texUsuario.Size = new System.Drawing.Size(436, 16);
+            this.texUsuario.Size = new System.Drawing.Size(436, 19);
             this.texUsuario.TabIndex = 9;
             this.texUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -360,7 +360,7 @@ namespace MDPV
             this.texContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.texContraseña.Location = new System.Drawing.Point(189, 73);
             this.texContraseña.Name = "texContraseña";
-            this.texContraseña.Size = new System.Drawing.Size(436, 16);
+            this.texContraseña.Size = new System.Drawing.Size(436, 19);
             this.texContraseña.TabIndex = 9;
             this.texContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -387,7 +387,7 @@ namespace MDPV
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(4, 11);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(436, 16);
+            this.textBox2.Size = new System.Drawing.Size(436, 19);
             this.textBox2.TabIndex = 7;
             // 
             // texNombre
@@ -395,7 +395,7 @@ namespace MDPV
             this.texNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.texNombre.Location = new System.Drawing.Point(185, 5);
             this.texNombre.Name = "texNombre";
-            this.texNombre.Size = new System.Drawing.Size(436, 16);
+            this.texNombre.Size = new System.Drawing.Size(436, 19);
             this.texNombre.TabIndex = 5;
             this.texNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -404,7 +404,7 @@ namespace MDPV
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(147, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 16);
+            this.label6.Size = new System.Drawing.Size(36, 20);
             this.label6.TabIndex = 4;
             this.label6.Text = "Rol";
             // 
@@ -413,7 +413,7 @@ namespace MDPV
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(29, 113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 16);
+            this.label5.Size = new System.Drawing.Size(156, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "Correo electronico";
             // 
@@ -422,28 +422,28 @@ namespace MDPV
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(82, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 16);
+            this.label4.Size = new System.Drawing.Size(102, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Contraseña";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.label3.Location = new System.Drawing.Point(112, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Metropolis Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(19, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 16);
+            this.label2.Size = new System.Drawing.Size(162, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre y Apellidos";
             // 
