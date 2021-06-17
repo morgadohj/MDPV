@@ -9,7 +9,7 @@ namespace MDPV.Conexion
 {
     class conexion
     {
-        public static string conexionm = @"data source = DESKTOP-N2AETTM\SQLEXPRESS; Initial Catalog= MDPV;Integrated Security = true";
+        public static string conexionm = @"data source = 25.79.95.49; Initial Catalog= MDPV; user id = Admin; password = *159753*";
     
     }
 }
