@@ -13,11 +13,26 @@ namespace MDPV.Modulos
         public Login()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void txtusuario_Leave(object sender, EventArgs e)
+        {
+         
         }
     }
 }
